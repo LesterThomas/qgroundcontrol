@@ -24,6 +24,8 @@ Item {
         PreFlightCheckGroup {
             name: qsTr("Generic Initial checks")
 
+
+            
             PreFlightCheckButton {
                 name:           qsTr("Hardware")
                 manualText:     qsTr("Props mounted? Wings secured? Tail secured?")

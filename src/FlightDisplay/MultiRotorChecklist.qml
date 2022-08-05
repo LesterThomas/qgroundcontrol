@@ -25,10 +25,28 @@ Item {
             name: qsTr("Multirotor Initial Checks")
 
             PreFlightCheckButton {
-                name:           qsTr("Hardware")
-                manualText:     qsTr("Props mounted and secured?")
+                name:           qsTr("Network")
+                manualText:     qsTr("Check coverage for mission")
+            }
+            PreFlightCheckButton {
+                name:           qsTr("Network")
+                manualText:     qsTr("Order dynamic 5G slice, confirm network status")
+            }            
+            PreFlightCheckButton {
+                name:           qsTr("No-Fly zones")
+                manualText:     qsTr("Mission does not intersect with active no-fly zones")
             }
 
+            PreFlightCheckButton {
+                name:           qsTr("Weather")
+                manualText:     qsTr("Forecast weather within tollerance")
+            }
+            
+            PreFlightCheckButton {
+                name:           qsTr("Hardware")
+                manualText:     qsTr("Drone hardware self-check")
+            }
+                        
             PreFlightBatteryCheck {
                 failurePercent:                 40
                 allowFailurePercentOverride:    false
@@ -43,43 +61,6 @@ Item {
             }
 
             PreFlightRCCheck {
-            }
-        }
-
-        PreFlightCheckGroup {
-            name: qsTr("Please arm the vehicle here")
-
-            PreFlightCheckButton {
-                name:            qsTr("Motors")
-                manualText:      qsTr("Propellers free? Then throttle up gently. Working properly?")
-            }
-
-            PreFlightCheckButton {
-                name:           qsTr("Mission")
-                manualText:     qsTr("Please confirm mission is valid (waypoints valid, no terrain collision).")
-            }
-
-            PreFlightSoundCheck {
-            }
-        }
-
-        PreFlightCheckGroup {
-            name: qsTr("Last preparations before launch")
-
-            // Check list item group 2 - Final checks before launch
-            PreFlightCheckButton {
-                name:           qsTr("Payload")
-                manualText:     qsTr("Configured and started? Payload lid closed?")
-            }
-
-            PreFlightCheckButton {
-                name:           qsTr("Wind & weather")
-                manualText:     qsTr("OK for your platform?")
-            }
-
-            PreFlightCheckButton {
-                name:           qsTr("Flight area")
-                manualText:     qsTr("Launch area and path free of obstacles/people?")
             }
         }
     }
