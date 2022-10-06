@@ -1,0 +1,14 @@
+{
+  "name": "coveragecheckapi",
+  "version": "1.0.0",
+  "description": "Mock network coverage api",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Lester Thomas",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
