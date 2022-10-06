@@ -19,6 +19,7 @@ using navigation_mode_category_t = events::common::enums::navigation_mode_catego
 void HealthAndArmingCheckHandler::handleEvent(const events::parser::ParsedEvent& event)
 {
     Type type;
+
     if (event.eventNamespace() == "common" && event.name() == "arming_check_summary") {
         type = Type::ArmingCheckSummary;
     } else if (event.eventNamespace() == "common" && event.name() == "health_summary") {
@@ -81,8 +82,8 @@ void HealthAndArmingCheckHandler::handleEvent(const events::parser::ParsedEvent&
 
 void HealthAndArmingCheckHandler::reset()
 {
-	_results[_currentResult].reset();
-	_expectedEvent = Type::ArmingCheckSummary;
+    _results[_currentResult].reset();
+    _expectedEvent = Type::ArmingCheckSummary;
 }
 
 void HealthAndArmingCheckHandler::testReport()

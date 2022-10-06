@@ -24,14 +24,13 @@ Item {
         PreFlightCheckGroup {
             name: qsTr("Multirotor Initial Checks")
 
-            PreFlightCheckButton {
-                name:           qsTr("Network")
-                manualText:     qsTr("Check coverage for mission")
+
+            PreFlightCellularCoverageCheck {
             }
-            PreFlightCheckButton {
-                name:           qsTr("Network")
-                manualText:     qsTr("Order dynamic 5G slice, confirm network status")
-            }            
+
+            PreFlightCellFeasibilityCheck {
+            }
+
             PreFlightCheckButton {
                 name:           qsTr("No-Fly zones")
                 manualText:     qsTr("Mission does not intersect with active no-fly zones")
@@ -60,7 +59,7 @@ Item {
                 allowOverrideSatCount:  true
             }
 
-            PreFlightRCCheck {
+            PreFlightCellReadinessCheck {
             }
         }
     }

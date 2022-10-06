@@ -1,3 +1,7 @@
+# QGroundControl fork for 5G Chargers Catalyst
+
+This is a fork of the https://github.com/mavlink/qgroundcontrol Drone Mission Control software for the 5G Chargers TM Forum Catalyst project. For details of the changes added as part of this project, see [Changes](5GChargersChanges.md)
+
 # QGroundControl Ground Control Station
 
 [![Releases](https://img.shields.io/github/release/mavlink/QGroundControl.svg)](https://github.com/mavlink/QGroundControl/releases)

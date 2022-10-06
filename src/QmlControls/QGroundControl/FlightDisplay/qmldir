@@ -27,6 +27,9 @@ PreFlightBatteryCheck           1.0 PreFlightBatteryCheck.qml
 PreFlightGPSCheck               1.0 PreFlightGPSCheck.qml
 PreFlightRCCheck                1.0 PreFlightRCCheck.qml
 PreFlightSensorsHealthCheck     1.0 PreFlightSensorsHealthCheck.qml
+PreFlightCellularCoverageCheck  1.0 PreFlightCellularCoverageCheck.qml
+PreFlightCellFeasibilityCheck   1.0 PreFlightCellFeasibilityCheck.qml
+PreFlightCellReadinessCheck     1.0 PreFlightCellReadinessCheck.qml
 PreFlightSoundCheck             1.0 PreFlightSoundCheck.qml
 ProximityRadarValues            1.0 ProximityRadarValues.qml
 ProximityRadarVideoView         1.0 ProximityRadarVideoView.qml

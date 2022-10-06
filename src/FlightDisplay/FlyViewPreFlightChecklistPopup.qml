@@ -34,6 +34,15 @@ QGCPopupDialog {
     }
 
     function _showPreFlightChecklistIfNeeded() {
+
+        console.info("inside _showPreFlightChecklistIfNeeded"); // LT Added
+        console.info("checkList"); // LT Added
+        console.info(checkList); // LT Added
+
+        console.info("checkList.item"); // LT Added
+        console.info(checkList.item); // LT Added
+
+
         if (_activeVehicle && !_checklistComplete && _enforceChecklist) {
             popupTimer.restart()
         }
