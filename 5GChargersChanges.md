@@ -18,3 +18,8 @@ Adding CellularCoverage check:
 under build menu run qmake to rebuild the makefiles
 
 4. run
+
+
+# Demonstration
+
+There is a video recording of the demonstration for DTW 2022 Copenhagen at: 
